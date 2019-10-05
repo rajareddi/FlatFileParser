@@ -14,7 +14,7 @@ public class FlatFileParserService {
 
     public void getFile() throws FileNotFoundException {
         long startTime = System.currentTimeMillis();
-        InputStream payload = new FileInputStream(new File("C:\\Workspace\\flatfileparser\\src\\main\\resources\\sampleFile.txt"));
+        InputStream payload = new FileInputStream(new File("D:\\naveen\\FlatFileParser\\flatfileparser\\src\\main\\resources\\sampleFile.txt"));
         createFixedLengthFile(payload);
         long endTime = System.currentTimeMillis();
         long totalTime = ((endTime - startTime) / 1000) % 60;
